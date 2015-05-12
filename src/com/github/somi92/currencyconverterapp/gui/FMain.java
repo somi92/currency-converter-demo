@@ -194,7 +194,7 @@ public class FMain extends javax.swing.JFrame {
 
             DecimalFormat df = new DecimalFormat("#.000");
 
-            jlblCurrency1.setText(amount+" "+sourceCurrency);
+            jlblCurrency1.setText(df.format(amount)+" "+sourceCurrency);
             jlblCurrency2.setText(df.format(result)+" "+targetCurrency);
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(this, "Greska! Nepravilno unet iznos.");
